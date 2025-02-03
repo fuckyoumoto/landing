@@ -19,13 +19,7 @@
         }
     ];
 
-    let contributors = [
-        "progzone122",
-        "shomykohai",
-        "GitFASTBOOT",
-        "R0rt1z2",
-        "OverWorldD"
-    ];
+    let contributors = ["progzone122", "shomykohai", "GitFASTBOOT", "R0rt1z2", "OverWorldD"];
 </script>
 
 <HeroSection />
@@ -38,8 +32,7 @@
         header="Testpoints"
         text="Explore testpoints for your device completely free of charge" />
 <div id="supported-devices">
-    <SupportedDevices devices="{devices}" />
+    <SupportedDevices {devices} />
 </div>
-<CommunitySection contributors="{contributors}" />
+<CommunitySection {contributors} />
 <StickersSection />
-<!-- -->
