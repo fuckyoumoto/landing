@@ -42,3 +42,4 @@
 </div>
 <CommunitySection contributors="{contributors}" />
 <StickersSection />
+<!-- -->
