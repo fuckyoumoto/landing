@@ -12,8 +12,6 @@
             </h2>
             <p class="text-sm md:text-base">{@html text}</p>
         </div>
-
-        <!-- Левая часть с изображением -->
         <div class="flex-1">
             <img src="{image}" class="w-full h-auto object-cover" />
         </div>
