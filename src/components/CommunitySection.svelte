@@ -1,5 +1,7 @@
 <script>
     import axios from "axios";
+    import { contributorsStore, updateContributorsStore, checkDataValidity } from '../stores/contributors.js';
+    import { onMount } from 'svelte';
 
     export let contributors = [];
 
@@ -17,17 +19,26 @@
     };
 
     const updateContributors = async () => {
+        const updatedContributors = [];
         for (let i = 0; i < contributors.length; i++) {
             const profile = await getGitHubProfile(contributors[i]);
             if (profile) {
-                contributors[i] = { ...contributors[i], ...profile };
+                updatedContributors.push({ ...contributors[i], ...profile });
             }
         }
+        return updatedContributors;
     };
 
-    import { onMount } from 'svelte';
-    onMount(() => {
-        updateContributors();
+    onMount(async () => {
+        const validData = checkDataValidity();
+        if (validData.contributors.length === 0) {
+            // If the data is missing or out of date, update it
+            const updatedContributors = await updateContributors();
+            updateContributorsStore(updatedContributors);
+        } else {
+            contributors = validData.contributors;
+            updateContributorsStore(validData.contributors);
+        }
     });
 </script>
 
@@ -36,7 +47,7 @@
     <p class="text-sm mb-4 text-center lg:text-left">Join our community and contribute to the project</p>
 
     <div class="flex flex-wrap gap-5 justify-center lg:justify-start">
-        {#each contributors as contributor}
+        {#each $contributorsStore.contributors as contributor}
             <a href="{contributor.url}" target="_blank">
                 <div class="flex justify-center cursor-pointer select-none transition transform hover:scale-95">
                     <img src={contributor.avatar} alt={contributor.name} class="cursor-pointer w-16 h-16 object-cover border-2 border-white hover:border-color9" />
