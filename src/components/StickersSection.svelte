@@ -5,7 +5,7 @@
 <div class="landing-container w-full flex justify-center items-center py-5 lg:py-10 px-5 lg:px-20">
     <div class="flex flex-col md:flex-row w-full max-w-screen-xl gap-10">
         <div class="flex-1">
-            <img src="/stickers.png" class="auto h-auto object-cover" />
+            <img src="/fuckyoumoto/stickers.png" class="auto h-auto object-cover" />
         </div>
 
         <div class="flex-1 flex flex-col justify-center text-center md:text-left gap-2">
