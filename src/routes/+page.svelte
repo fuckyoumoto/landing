@@ -13,6 +13,11 @@
             link: "https://penangf.fuckyoumoto.xyz"
         },
         {
+            codename: "fogorow",
+            model: "Moto G24/G24 Power",
+            link: "https://fogorow.fuckyoumoto.xyz"
+        },
+        {
             codename: "cofud",
             model: "Moto G31",
             link: "https://cofud.fuckyoumoto.xyz"
