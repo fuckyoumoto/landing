@@ -24,11 +24,11 @@
 
 <HeroSection />
 <LeftImageTextSelection
-        image="/fuckyoumoto/screenshot1.png"
+        image="/screenshot1.png"
         header="Free guides"
         text="Unlock bootloader, modding and learn how to repair your device with step-by-step instructions.<br>All resources are open-source and completely free." />
 <RightImageTextSelection
-        image="/fuckyoumoto/screenshot2.png"
+        image="/screenshot2.png"
         header="Testpoints"
         text="Explore testpoints for your device completely free of charge" />
 <div id="supported-devices">

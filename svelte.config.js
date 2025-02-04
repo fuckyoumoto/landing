@@ -12,7 +12,7 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : "/fuckyoumoto"
+			base: process.argv.includes('dev') ? '' : "/"
 		}
 	}
 };
