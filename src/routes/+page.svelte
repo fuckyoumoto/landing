@@ -24,7 +24,7 @@
         }
     ];
 
-    let contributors = ["progzone122", "shomykohai", "GitFASTBOOT", "R0rt1z2", "OverWorldD", "cxzstuff", "Marcus-J-A"];
+    let contributors = ["progzone122", "shomykohai", "GitFASTBOOT", "R0rt1z2", "OverWorldD", "cxzstuff", "Marcus-J-A", "milktoast56"];
 </script>
 
 <HeroSection />
