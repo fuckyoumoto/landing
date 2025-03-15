@@ -18,6 +18,11 @@
             link: "https://fogorow.fuckyoumoto.xyz"
         },
         {
+            codename: "malta/malta_64",
+            model: "Moto E7/E7 Power",
+            link: "https://malta.fuckyoumoto.xyz/"
+        },
+        {
             codename: "cofud",
             model: "Moto G31",
             link: "https://cofud.fuckyoumoto.xyz"
